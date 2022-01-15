@@ -1,0 +1,152 @@
+
+.navbar-main{
+    background-image: linear-gradient( #aef1ee, #efa2b4);
+    overflow-x: hidden;
+}
+
+
+.Navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.nav-menu{
+    gap: 40px;
+}
+
+
+
+
+.nav-links{
+    transition: 0.3s ease;
+    display: flex;
+    margin-top: 45px;
+    flex-direction: row;
+    list-style: none;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.nav-links li a{
+    text-decoration: none;
+    color: #b41148;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #bd3c26;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: width 0.3s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: 0.3s ease-in;
+    background: #e02f6b;
+}
+
+
+.bar:nth-child(2){
+    opacity: 1;
+}
+
+
+/* NAVBAR-MEDIA-QUERIES */
+
+@media(max-width:770px){
+    .hamburger{
+        display: block;
+        margin-top: 50px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+
+    .nav-menu{
+        position: fixed;
+        left: -150%;
+        top: 40px;
+        height: 100%;
+        flex-direction: column;
+        background-color: linear-gradient( #aef1ee, #efa2b4);
+        backdrop-filter: blur(40px);
+        border-radius: 30px;
+        width: 100%;
+        text-align: center;
+        transition: 0.9s ease;
+        z-index: 100;
+    }
+
+    .nav-item{
+        margin: 28px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+
+    .nav-links li a::after{
+    content: '';
+    background: transparent;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: width 0.3s;
+    }
+
+}
+
+
+
+
