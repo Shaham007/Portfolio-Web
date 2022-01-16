@@ -13,11 +13,11 @@ function Main() {
                         <p>Hello It's</p>
                         <h1>Shaham Mazhar</h1>
                         <h2>Front End Developer</h2>
-                                <a href='#About' className='btn button button--anthe'> <span>More About Me</span> </a>
+                                <a href='#About' className='btn button button--anthe button_1'> <span>More About Me</span> </a>
                                 <a href='#' className='btn button button--anthe'>  <span>Portfolio</span> </a>
                         </div>
                         <div className='home-img'>
-                            <div className='img-box' style={{ backgroundImage: `url(${Image})` }}></div>
+                                <div className='img-box' style={{ backgroundImage: `url(${Image})` }} ></div>
                         </div>
                     </div>
                 </div>

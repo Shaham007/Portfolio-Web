@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../components/About.css";
-import Image2 from '../image/EEZR8278.JPG';
+import Image2 from '../image/dsghttt.png';
 
 function About() {
     return (
@@ -14,14 +14,9 @@ function About() {
                                 <div className='about-img-box' style={{ backgroundImage: `url(${Image2})` }}></div>
                             </div>
                             <div className='about-text'>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                 sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                  ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                  Duis aute irure dolor in reprehenderit in voluptate velit
-                                   esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-                                   sint occaecat cupidatat non proident, sunt in culpa qui
-                                    officia deserunt mollit anim id est laborum </p>
+                                <p> I sucessfully completed Front-End Developer course on Udemy(online learning platform) 
+                                I am motivated and enthuasastic to work with proffessionls JavaScript and React Developers
+                                I am always keen to learn more</p>
                                 <h3>Skills :</h3>
                                 <div className='skills'>
                                     <div className='skills-item'>HTML</div>
@@ -32,8 +27,8 @@ function About() {
                                     <div className='skills-item'>Git</div>
                                     <div className='skills-item'>Node.js</div>
                                 </div>
+                                
                             </div>
-                            
                         </div>
                 </div>
             </section>

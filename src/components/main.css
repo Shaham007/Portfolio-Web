@@ -18,6 +18,7 @@ body{
     font-size: 16px;
     line-height: 1.2;
     color: #18293c;
+    padding-top:30px;
 }
 
 .main-content{
@@ -50,6 +51,12 @@ body{
     opacity: 0.9;
 }
 
+.img-box:hover{
+    transform: rotateY(25deg);
+    transition: 0.5s;
+     background-color: rgb(235, 222, 235);
+}
+
 .container{
     padding: 0 40px;
     width: 100%;
@@ -68,19 +75,19 @@ body{
 }
 
 .home-text p{
-    font-size: 30px;
+    font-size: 2rem;
     font-family: 'The Nautigal', cursive;
 }
 
 
 .home-text h1{
-    font-size: 40px;
+    font-size: 3rem;
     font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 
 .home-text h2{
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'Mochiy Pop P One', sans-serif;
 }
 
@@ -91,6 +98,8 @@ body{
     background-color: rgba(255, 255, 255, 0.40);
     border-radius: 50%;
 }
+
+/* HOME IMAGE MEDIA QUERRIES  */
 
 @media(max-width:650px){
     .img-box{
@@ -105,13 +114,20 @@ body{
     .img-box{
            height: 187px;
     }
-}
+    }
 
 
 @media(max-width:386px){
     .img-box {
     height: 142px;
+    }
+
 }
+
+@media(max-width:311px){
+    .img-box {
+        height: 114px;
+    }
 
 }
 
@@ -139,7 +155,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 10px 28px;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 4px;
     color: #e02f6b;
     font-weight: 500;
     text-transform: capitalize;
@@ -183,23 +199,26 @@ a{
 	background: none;
 }
 
+
+
 .button--anthe::before {
 	content: '';
-	background: rgb(201, 100, 100);
+	background: #8fd8d4;
 	-webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 	transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
 .button--anthe:hover::before {
-	background: rgb(201, 100, 100);
+	background: #8fd8d4;
 	-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
 .button--anthe span {
 	display: block;
-    color: #888f2f;
+    font-size: 19px;
+    color: #ffffff;
 	mix-blend-mode: difference;
 	transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
 }
@@ -209,8 +228,25 @@ a{
 }
 
 
+/* BUTTON MEDIA QUERRIES */
+
+
+@media(max-width:411px){
+    .button {
+	padding: 5px;
+    }
+}
+
+@media(max-width:372px){
+    .button_1 {
+	margin: 25px 0;
+    }
+}
+
+
 /* FOOTER  */
 
 .home-fotter{
     margin-top: 70px;
+    color: #e02f6b;
 }

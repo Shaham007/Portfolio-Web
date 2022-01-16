@@ -46,38 +46,127 @@
 
 .about-img-box{
     position: relative;
-    height: 429px;
+    height: 301px;
+    margin: auto;
     background-size: cover;
     background-position-x: center;
     object-fit: cover;
-    max-width: 318px;
+    max-width: 100%;
     background-color: rgba(255, 255, 255, 0.40);
-    border-radius: 20px;
+    border-radius: 50%;
     opacity: 0.94;
+}
+
+.about-img-box:hover{
+    transform: scale(1.07);
+    transition: 0.5s;
+    background-color: rgb(235, 222, 235);
 }
 
 
 .about-img{
-    width: 20%;
+    width: 295px;
     margin: auto;
-    
+    height: 304px;
+    border: 4px solid rgba(255, 255, 255, 0.40);
+    border-radius: 50%;
 }
 
+ /* ABOUT IMAGE MEDIA QUERRIES */
+
+@media(max-width:840px){
+    .about-img-box{
+        height: 244px;
+        width: 228px;
+    }
+    .about-img{
+        width: 231px;
+        height: 242px
+    }
+}
+
+@media(max-width:680px){
+    .about-img {
+    width: 155px;
+    height: 163px;
+    }
+
+    .about-img-box {
+    width: 152px;
+    height: 164px;
+}
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto+Mono&family=The+Nautigal:wght@700&display=swap');
+
+/* TEXT BOX  */
+
 .about-text{
-    max-width: 311px;
+    max-width: 60%;
     margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
 }
 
 .about-text p{
     text-align: start;
-    
+    line-height: 1.9;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
+
+/* TEXT BOX MEDIA QUERRIES  */
 
 @media(max-width:650px){
     .about-text{
     max-width: 311px;
     margin: 35px auto;
     padding: 15px;
+    }
+} 
+
+/* SKILLS TEXT SECTION  */
+
+.skills {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 1.8;
+    width: 100%;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    
 }
+
+.skills .skills-item{
+    font-weight: 550;
+    font-size: 15px;
 }
+
+
+
+.about-text .skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+    
+}
+
+.about-text .skills-item{
+    background-color: rgba(255, 255, 255, 0.40);
+    border: 1px solid rgba(255, 255, 255, 0.25) ;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+}
+
+.skills-item:hover{
+    background-color: #f0b3c1;
+    transition: 0.5s ease;
+}
+
