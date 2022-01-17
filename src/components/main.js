@@ -5,6 +5,16 @@ import Image from '../image/IMG-7533.png';
 function Main() {
     return (
         <div className='main'>
+            <div className='bg-circles'>
+                <div className='circle-1'></div>
+                <div className='circle-2'></div>
+                <div className='circle-3'></div>
+                <div className='circle-4'></div>  
+            </div>
+            <div className='overlay'>
+
+            </div>
+
         <div className='main-content'>
             <section className='home-section'>
                 <div className='container'>
@@ -14,7 +24,7 @@ function Main() {
                         <h1>Shaham Mazhar</h1>
                         <h2>Front End Developer</h2>
                                 <a href='#About' className='btn button button--anthe button_1'> <span>More About Me</span> </a>
-                                <a href='#' className='btn button button--anthe'>  <span>Portfolio</span> </a>
+                                <a href='#portfolio' className='btn button button--anthe'>  <span>Portfolio</span> </a>
                         </div>
                         <div className='home-img'>
                                 <div className='img-box' style={{ backgroundImage: `url(${Image})` }} ></div>
@@ -23,6 +33,7 @@ function Main() {
                 </div>
             </section>
             </div>
+            
             <div className='home-fotter'>
                 <h2> About Me</h2>
             </div>

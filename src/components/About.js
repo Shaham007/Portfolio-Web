@@ -10,9 +10,7 @@ function About() {
             <section className='about-section'>
                 <div className='container'>
                         <div className='row'>
-                            <div className='about-img'>
-                                <div className='about-img-box' style={{ backgroundImage: `url(${Image2})` }}></div>
-                            </div>
+                            
                             <div className='about-text'>
                                 <p> I sucessfully completed Front-End Developer course on Udemy(online learning platform) 
                                 I am motivated and enthuasastic to work with proffessionls JavaScript and React Developers
@@ -27,12 +25,19 @@ function About() {
                                     <div className='skills-item'>Git</div>
                                     <div className='skills-item'>Node.js</div>
                                 </div>
-                                
+                            </div>
+                            <div className='about-img'>
+                                <div className='about-img-box' style={{ backgroundImage: `url(${Image2})` }}></div>
                             </div>
                         </div>
                 </div>
             </section>
             </div>
+
+            <div className='about-fotter'>
+                <h2> My Portfolio's</h2>
+            </div>
+
         </div>
     )
 }

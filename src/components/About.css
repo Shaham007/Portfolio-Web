@@ -17,7 +17,6 @@
 
 .about-section{
     background-color: rgba(255, 255, 255, 0.40);
-    border: 1px solid rgba(255, 255, 255, 0.25);
     min-height: 85vh;
     border-radius: 30px;
     margin-top: 50px;
@@ -60,7 +59,8 @@
 .about-img-box:hover{
     transform: scale(1.07);
     transition: 0.5s;
-    background-color: rgb(235, 222, 235);
+    background-color: #f1dee2;
+    box-shadow: 0 0 40px #f0c2cc;
 }
 
 
@@ -170,3 +170,10 @@
     transition: 0.5s ease;
 }
 
+
+/* FOOTER  */
+
+.about-fotter{
+    margin-top: 70px;
+    z-index: 1;
+}

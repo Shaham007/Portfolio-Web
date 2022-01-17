@@ -1,0 +1,29 @@
+.portfolio{
+    min-height: 100vh;
+    background-image: linear-gradient(#efa2b4, #faefd2);
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #18293c;
+}
+
+
+.portfolio-content{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.portfolio-section{
+    background-color: rgba(255, 255, 255, 0.40);
+    min-height: 85vh;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.project-container{
+    background-color: tomato;
+}
