@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=The+Nautigal:wght@700&display=swap');
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -365,5 +369,4 @@ a{
 
 .home-fotter{
     margin-top: 70px;
-    z-index: 1;
 }

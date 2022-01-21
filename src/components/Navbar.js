@@ -14,8 +14,8 @@ function Navbar() {
                         style={{borderColor:"red"}}>About Me</a></li>
                     <li className="nav-item"><a className="nav-link" href="#portfolio"
                         style={{ borderColor: "#FFE162" }}>Portfolio</a></li>
-                    <li className="nav-item"><a className="nav-link" href="#contact"
-                     style={{border:"none" , paddingRight:"0"}}>Contact info</a></li>
+                    <li className="nav-item"><a className="nav-link" href="#Contact"
+                     style={{border:"none" , paddingRight:"0"}}>Contact</a></li>
                 </ul>
                 <div className="hamburger">
                     <span className="bar"></span>
