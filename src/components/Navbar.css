@@ -1,5 +1,4 @@
 
-
 .navbar-main{
     background-image: linear-gradient(#f7dac2 , #e6ccf5);
     overflow-x: hidden;
@@ -45,9 +44,25 @@
     color: black;
     font-size: 18px;
     font-weight: 600;
-    border-right: 2px solid #a200ff;
+    
     padding-right: 15px;
     font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.link_1{
+border-right: 2px solid #a200ff;
+}
+
+.link_2{
+border-right: 2px solid red;
+}
+
+.link_3{
+border-right: 2px solid #FFE162;
+}
+
+.link_4{
+border: none;
 }
 
 
@@ -64,7 +79,7 @@
     height: 3px;
     margin: 5px auto;
     transition: 0.3s ease-in;
-    background: #e02f6b;
+    background: #be63f3;
 }
 
 
@@ -72,10 +87,19 @@
     opacity: 1;
 }
 
-.nav-link:hover{
+.link_1:hover{
     color: #be63f3;
 }
 
+.link_2:hover{
+    color: red;
+}
+.link_3:hover{
+    color: #FFE162;
+}
+.link_4:hover{
+    color: rgb(30, 207, 24);
+}
 
 
 
@@ -91,8 +115,6 @@
     position: fixed;
     padding: 5px;
     background-color: transparent;
-    border-radius: 50%;
-    animation: boxShadow 20s linear infinite;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -110,19 +132,22 @@
     
 
     .nav-links{
-    left: -100%;
     visibility: hidden;
-    bottom: -15px;
     height: 100%;
+    bottom: -15px;
+    display: flex;
     flex-direction: column;
-    -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(15px);
     border-radius: 30px;
     width: 97%;
     text-align: center;
-    transition: 0.9s ease;
     z-index: 100;
+    gap: 50px;
     font-family: 'The Nautigal', cursive;
+    }
+
+    .nav-links li a{
+    border: none;
     }
 
     
@@ -131,7 +156,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 75%;
+    height: 100%;
     width: 0%;
     z-index: -1;
     transition: width 0.3s ease;
@@ -139,7 +164,11 @@
     }
 
     .nav-links li a:hover:before{
-        width: 120%;
+        width: 100%;
+    }
+
+    .nav-links.active{
+    visibility: visible;
     }
 
 

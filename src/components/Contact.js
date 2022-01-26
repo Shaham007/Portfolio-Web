@@ -10,7 +10,7 @@ function Contact() {
             
             <div className='row'>
               <div className='contact-form'>
-                  <form>
+                <form>
                       <div className='inner-row'>
                                       
                           <div className='input-group'>
